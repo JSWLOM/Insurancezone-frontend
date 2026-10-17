@@ -10,12 +10,14 @@
 <meta property="og:description" content="Comprehensive insurance solutions for your family and business">
 <meta property="og:type" content="website">
 <link rel="canonical" href="https://insurancezone.co.in">
-<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>IZ</text></svg>">
+<link rel="icon" type="image/x-icon" href="images/favicon.ico">
+<link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32.png">
+<link rel="apple-touch-icon" sizes="180x180" href="images/apple-touch-icon.png">
 <script type="application/ld+json">
 {"@context":"https://schema.org","@type":"InsuranceAgency","name":"Insurance Zone","url":"https://insurancezone.co.in","telephone":"+91-9473663757","address":{"@type":"PostalAddress","streetAddress":"Anand Vihar Colony, RKBK","addressLocality":"Ghazipur","addressRegion":"Uttar Pradesh","postalCode":"233001","addressCountry":"IN"},"openingHours":"Mo-Sa 09:00-18:00"}
 </script>
 <link rel="preconnect" href="https://fonts.googleapis.com">
-<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400;1,600&family=DM+Sans:wght@300;400;500&family=Noto+Sans+Devanagari:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400;1,600&family=Montserrat:wght@300;400;500;600&family=Noto+Sans+Devanagari:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 <style>
   :root {
     --bg:#ffffff;--surface:#ffffff;--line:#e2e2de;--black:rgb(0, 0, 0);--white:#ffffff;
@@ -23,22 +25,23 @@
     --gray-400:#8a8a85;--gray-500:#6a6a65;--gray-600:#4a4a46;--gray-700:#2e2e2b;--gray-800:#1a1a18;
     --accent:#315b7a;--accent-hover:#254d3e;--accent-light:#c8dcd4;--accent-pale:#eef4f1;
     --digi:#b5762b;--digi-hover:#8f5c20;
-    --font-main:'DM Sans','Noto Sans Devanagari',sans-serif;--font-serif:'Cormorant Garamond',serif;
+    --font-main:'Montserrat','Noto Sans Devanagari',sans-serif;--font-serif:'Cormorant Garamond',serif;
   }
   *,*::before,*::after{box-sizing:border-box;margin:0;padding:0;}
   html{scroll-behavior:smooth;font-size:16px;}
   body{font-family:var(--font-main);background:var(--bg);color:var(--black);overflow-x:hidden;font-weight:300;}
   body::before{content:'';position:fixed;inset:0;background-image:url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.75' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)' opacity='0.04'/%3E%3C/svg%3E");pointer-events:none;z-index:9998;opacity:0.4;}
-  nav{position:fixed;top:0;left:0;right:0;z-index:1000;background:rgba(255,255,255,0.97);backdrop-filter:blur(12px);border-bottom:1px solid rgba(200,220,212,0.2);padding:0 2rem;height:64px;display:flex;align-items:center;justify-content:space-between;}
+  nav{position:fixed;top:0;left:0;right:0;z-index:1000;background:rgba(0,0,0,0.96);backdrop-filter:blur(12px);border-bottom:1px solid rgba(200,220,212,0.15);padding:0 2rem;height:64px;display:flex;align-items:center;justify-content:space-between;}
   .nav-logo{display:flex;align-items:center;gap:10px;text-decoration:none;}
+  .nav-logo-img{height:56px;width:auto;display:block;}
   .nav-logo-mark{width:36px;height:36px;background:var(--accent);border-radius:8px;display:flex;align-items:center;justify-content:center;font-family:var(--font-serif);font-weight:600;font-size:16px;color:var(--white);}
   .nav-logo-text{color:var(--black);font-family:var(--font-serif);font-weight:600;font-size:1.15rem;letter-spacing:0.05em;}
   .nav-links{display:flex;gap:2rem;list-style:none;align-items:center;}
-  .nav-links a{color:var(--gray-500);text-decoration:none;font-size:0.78rem;font-weight:400;transition:color 0.2s;letter-spacing:0.1em;text-transform:uppercase;}
-  .nav-links a:hover{color:var(--black);}
+  .nav-links a{color:rgba(255,255,255,0.6);text-decoration:none;font-size:0.78rem;font-weight:400;transition:color 0.2s;letter-spacing:0.1em;text-transform:uppercase;}
+  .nav-links a:hover{color:#fff;}
   .nav-right{display:flex;gap:12px;align-items:center;}
-  .lang-toggle{background:rgba(0,0,0,0.05);border:1px solid rgba(0,0,0,0.12);color:var(--black);padding:6px 14px;border-radius:100px;font-size:0.75rem;cursor:pointer;transition:all 0.2s;font-family:var(--font-main);letter-spacing:0.06em;}
-  .lang-toggle:hover{background:rgba(0,0,0,0.1);}
+  .lang-toggle{background:rgba(255,255,255,0.08);border:1px solid rgba(255,255,255,0.25);color:#fff;padding:6px 14px;border-radius:100px;font-size:0.75rem;cursor:pointer;transition:all 0.2s;font-family:var(--font-main);letter-spacing:0.06em;}
+  .lang-toggle:hover{background:rgba(255,255,255,0.16);}
   .btn-nav{background:var(--accent);color:var(--white);padding:8px 20px;border-radius:100px;font-size:0.78rem;font-weight:400;letter-spacing:0.08em;text-transform:uppercase;text-decoration:none;transition:all 0.2s;border:none;cursor:pointer;font-family:var(--font-main);}
   .btn-nav:hover{background:var(--accent-hover);transform:translateY(-1px);}
   .btn-nav-digi{background:var(--digi);color:var(--white);padding:8px 20px;border-radius:100px;font-size:0.78rem;font-weight:400;letter-spacing:0.08em;text-transform:uppercase;text-decoration:none;transition:all 0.2s;border:none;cursor:pointer;font-family:var(--font-main);}
@@ -284,8 +287,7 @@ function showLegal(type){
 
 <nav id="mainNav">
   <a href="#home" class="nav-logo">
-    <div class="nav-logo-mark">IZ</div>
-    <span class="nav-logo-text">Insurance Zone</span>
+    <img src="images/insurance-zone-logo.png" alt="Insurance Zone" class="nav-logo-img">
   </a>
   <ul class="nav-links">
     <li><a href="#services" data-en="Services" data-hi="सेवाएं">Services</a></li>
@@ -589,7 +591,7 @@ function showLegal(type){
 <footer id="mainFooter">
   <div class="footer-grid">
     <div class="footer-brand">
-      <div class="nav-logo" style="display:inline-flex;margin-bottom:0.25rem"><div class="nav-logo-mark">IZ</div><span class="nav-logo-text" style="color:var(--white)">Insurance Zone</span></div>
+      <a href="#home" class="nav-logo" style="display:inline-flex;margin-bottom:0.25rem"><img src="images/insurance-zone-logo.png" alt="Insurance Zone" class="nav-logo-img" style="height:72px;"></a>
       <p>Your trusted insurance partner in Uttar Pradesh. Protecting families and businesses since 2009.</p>
     </div>
     <div class="footer-col">

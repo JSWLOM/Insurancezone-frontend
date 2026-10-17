@@ -57,20 +57,16 @@
   .data-table td b{font-weight:500;color:var(--black);}
   .table-scroll{overflow-x:auto;-webkit-overflow-scrolling:touch;}
   .pill{display:inline-block;padding:3px 12px;border-radius:100px;font-size:0.68rem;font-weight:400;letter-spacing:0.06em;text-transform:uppercase;}
-  .pill-new{background:#dbeafe;color:#1d4ed8;}
-  .pill-contact{background:#fef9c3;color:#a16207;}
-  .pill-converted{background:var(--accent-pale);color:var(--accent);}
-  .pill-active{background:var(--accent-pale);color:var(--accent);}
+  .pill-new{background:#dbeafe;color:#1d4ed8;}.pill-contact{background:#fef9c3;color:#a16207;}
+  .pill-converted{background:var(--accent-pale);color:var(--accent);}.pill-active{background:var(--accent-pale);color:var(--accent);}
   .pill-inactive{background:#fef9c3;color:#a16207;}
   .pill-late{color:#d97706;font-size:0.68rem;background:#fef3c7;padding:2px 10px;border-radius:100px;letter-spacing:0.06em;text-transform:uppercase;}
   .emp-list{display:flex;flex-direction:column;gap:10px;}
   .emp-item{display:flex;align-items:center;gap:12px;padding:10px;border-radius:10px;transition:background 0.2s;}
   .emp-item:hover{background:var(--gray-50);}
   .emp-avatar{width:36px;height:36px;border-radius:50%;display:flex;align-items:center;justify-content:center;font-family:var(--font-serif);font-weight:600;font-size:0.9rem;flex-shrink:0;}
-  .emp-name{font-size:0.875rem;font-weight:400;}
-  .emp-role{font-size:0.72rem;color:var(--gray-400);font-weight:300;}
-  .dot-on{width:8px;height:8px;background:var(--accent);border-radius:50%;}
-  .dot-off{width:8px;height:8px;background:var(--gray-300);border-radius:50%;}
+  .emp-name{font-size:0.875rem;font-weight:400;}.emp-role{font-size:0.72rem;color:var(--gray-400);font-weight:300;}
+  .dot-on{width:8px;height:8px;background:var(--accent);border-radius:50%;}.dot-off{width:8px;height:8px;background:var(--gray-300);border-radius:50%;}
   .att-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1.25rem;margin-bottom:2rem;}
   .att-in{color:var(--accent);font-weight:400;}.att-out{color:var(--red);font-weight:400;}
   .att-grid-2{display:grid;grid-template-columns:1fr 1fr;gap:1.5rem;}
@@ -89,19 +85,14 @@
   .gps-pin{font-size:1.6rem;animation:bounce 1.5s ease infinite;}
   @keyframes bounce{0%,100%{transform:translateY(0)}50%{transform:translateY(-5px)}}
   .gps-distance{position:absolute;bottom:8px;left:50%;transform:translateX(-50%);background:rgba(0,0,0,0.55);color:#fff;padding:3px 12px;border-radius:100px;font-size:0.68rem;letter-spacing:0.06em;white-space:nowrap;transition:background 0.4s;}
-  .gps-distance.inside{background:rgba(34,197,94,0.75);}
-  .gps-distance.outside{background:rgba(220,38,38,0.7);}
+  .gps-distance.inside{background:rgba(34,197,94,0.75);}.gps-distance.outside{background:rgba(220,38,38,0.7);}
   .live-dot{display:inline-block;width:6px;height:6px;background:#22c55e;border-radius:50%;margin-right:5px;vertical-align:middle;animation:dot-blink 1.5s ease infinite;}
   @keyframes dot-blink{0%,100%{opacity:1;}50%{opacity:0.25;}}
   .loc-box{background:var(--gray-50);border-radius:10px;padding:0.875rem;margin-bottom:0.875rem;border:1px solid var(--line);}
   .loc-label{font-size:0.65rem;color:var(--gray-400);font-weight:400;letter-spacing:0.1em;text-transform:uppercase;margin-bottom:3px;}
-  .loc-val{font-size:0.85rem;font-weight:400;}
-  .loc-status{font-size:0.75rem;color:var(--accent);margin-top:4px;}
+  .loc-val{font-size:0.85rem;font-weight:400;}.loc-status{font-size:0.75rem;color:var(--accent);margin-top:4px;}
   .punch-btn{width:100%;padding:13px;background:var(--accent);color:#fff;border:none;border-radius:100px;font-size:0.8rem;font-weight:400;letter-spacing:0.08em;text-transform:uppercase;cursor:pointer;font-family:var(--font-main);transition:all 0.2s;display:flex;align-items:center;justify-content:center;gap:8px;}
-  .punch-btn:hover{background:var(--accent-hover);}
-  .punch-btn.out{background:var(--red);}
-  .punch-btn.out:hover{background:#b91c1c;}
-  .punch-btn:disabled{opacity:0.55;cursor:not-allowed;}
+  .punch-btn:hover{background:var(--accent-hover);}.punch-btn.out{background:var(--red);}.punch-btn.out:hover{background:#b91c1c;}.punch-btn:disabled{opacity:0.55;cursor:not-allowed;}
   .punch-note{font-size:0.7rem;color:var(--gray-400);text-align:center;margin-top:0.6rem;}
   .att-hist-header{display:flex;align-items:flex-start;justify-content:space-between;flex-wrap:wrap;gap:1rem;margin-bottom:1.5rem;}
   .att-hist-controls{display:flex;align-items:center;gap:0.75rem;flex-wrap:wrap;}
@@ -122,22 +113,14 @@
   .cal-day-num{font-size:0.85rem;font-weight:600;line-height:1;}
   .cal-day-lbl{font-size:0.56rem;font-weight:500;letter-spacing:0.03em;text-transform:uppercase;text-align:center;}
   .cal-empty{background:transparent;}
-  .cal-present{background:#dcfce7;color:#15803d;}
-  .cal-late{background:#fef9c3;color:#92400e;}
-  .cal-absent{background:#fee2e2;color:#991b1b;}
-  .cal-leave{background:#dbeafe;color:#1d4ed8;}
-  .cal-halfday{background:#fed7aa;color:#c2410c;}
-  .cal-sunday{background:var(--gray-100);color:var(--gray-300);}
-  .cal-holiday{background:#ede9fe;color:#6d28d9;}
-  .cal-today{background:var(--black);color:#fff;}
+  .cal-present{background:#dcfce7;color:#15803d;}.cal-late{background:#fef9c3;color:#92400e;}
+  .cal-absent{background:#fee2e2;color:#991b1b;}.cal-leave{background:#dbeafe;color:#1d4ed8;}
+  .cal-halfday{background:#fed7aa;color:#c2410c;}.cal-sunday{background:var(--gray-100);color:var(--gray-300);}
+  .cal-holiday{background:#ede9fe;color:#6d28d9;}.cal-today{background:var(--black);color:#fff;}
   .cal-future{background:var(--gray-50);color:var(--gray-300);border:1px dashed var(--gray-200);}
-  /* Manual-entry: dashed inner ring so colour category is still readable */
   .cal-manual{box-shadow:inset 0 0 0 2px currentColor;}
-  /* Pencil badge sits in top-right corner of cell */
   .cal-manual-badge{position:absolute;top:3px;right:4px;font-size:0.55rem;opacity:0.85;line-height:1;}
-  /* Clickable cells for admin marking */
-  .cal-clickable{cursor:pointer;transition:transform 0.15s,opacity 0.15s;}
-  .cal-clickable:hover{opacity:0.75;transform:scale(1.08);}
+  .cal-clickable{cursor:pointer;transition:transform 0.15s,opacity 0.15s;}.cal-clickable:hover{opacity:0.75;transform:scale(1.08);}
   .cal-legend{display:flex;gap:1rem;flex-wrap:wrap;padding-top:0.75rem;border-top:1px solid var(--line);}
   .cal-leg{display:flex;align-items:center;gap:5px;font-size:0.72rem;color:var(--gray-600);}
   .cal-leg-dot{width:10px;height:10px;border-radius:3px;flex-shrink:0;}
@@ -170,8 +153,7 @@
   .f-select{border-radius:10px;}.f-textarea{border-radius:10px;min-height:80px;resize:vertical;}
   .f-row{display:grid;grid-template-columns:1fr 1fr;gap:1rem;}
   .action-btn{background:var(--accent);color:#fff;padding:11px 26px;border-radius:100px;font-size:0.82rem;font-weight:400;letter-spacing:0.08em;text-transform:uppercase;border:none;cursor:pointer;font-family:var(--font-main);transition:all 0.2s;}
-  .action-btn:hover{background:var(--accent-hover);}
-  .action-btn:disabled{opacity:0.5;cursor:not-allowed;}
+  .action-btn:hover{background:var(--accent-hover);}.action-btn:disabled{opacity:0.5;cursor:not-allowed;}
   .action-btn-sm{background:var(--black);color:#fff;padding:8px 18px;border-radius:100px;font-size:0.75rem;font-weight:400;letter-spacing:0.06em;text-transform:uppercase;border:none;cursor:pointer;font-family:var(--font-main);transition:background 0.2s;}
   .action-btn-sm:hover{background:var(--gray-700);}
   .remove-btn{background:#fee2e2;color:#991b1b;border:1px solid #fecaca;padding:4px 12px;border-radius:100px;font-size:0.68rem;cursor:pointer;font-family:var(--font-main);transition:all 0.2s;}
@@ -185,8 +167,7 @@
   .modal-header{display:flex;justify-content:space-between;align-items:center;margin-bottom:1.5rem;}
   .modal-header h2{font-family:var(--font-serif);font-size:1.4rem;font-weight:400;}
   .modal-close{border:none;background:none;font-size:1.4rem;cursor:pointer;color:var(--gray-400);line-height:1;}
-  .modal-close:hover{color:var(--black);}
-  .modal-err{font-size:0.82rem;color:var(--red);margin-top:0.75rem;}
+  .modal-close:hover{color:var(--black);}.modal-err{font-size:0.82rem;color:var(--red);margin-top:0.75rem;}
   .toast{position:fixed;bottom:2rem;right:2rem;background:var(--black);color:#fff;padding:13px 20px;border-radius:100px;font-size:0.82rem;font-weight:400;letter-spacing:0.05em;transform:translateY(80px);opacity:0;transition:all 0.4s cubic-bezier(0.16,1,0.3,1);z-index:99999;display:flex;align-items:center;gap:8px;box-shadow:0 8px 30px rgba(0,0,0,0.15);border:1px solid rgba(200,220,212,0.15);}
   .toast.show{transform:translateY(0);opacity:1;}
   .mobile-topbar{display:none;position:fixed;top:0;left:0;right:0;z-index:300;background:var(--black);color:#fff;padding:0 1rem;align-items:center;justify-content:space-between;height:52px;border-bottom:1px solid rgba(255,255,255,0.07);}
@@ -197,10 +178,25 @@
   .mtb-logout:active{background:rgba(255,80,80,0.3);}
   .bottom-nav{display:none;position:fixed;bottom:0;left:0;right:0;z-index:300;background:var(--black);border-top:1px solid rgba(255,255,255,0.08);min-height:58px;padding-bottom:env(safe-area-inset-bottom,0px);}
   .bnav-item{flex:1;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:2px;cursor:pointer;color:rgba(255,255,255,0.38);transition:color 0.2s;padding:8px 2px;user-select:none;-webkit-tap-highlight-color:transparent;min-height:58px;touch-action:manipulation;}
-  .bnav-item:active{opacity:0.7;}
-  .bnav-item.active{color:var(--accent-light);}
-  .bnav-icon{font-size:1.1rem;line-height:1;}
-  .bnav-label{font-size:0.55rem;letter-spacing:0.06em;text-transform:uppercase;margin-top:1px;}
+  .bnav-item:active{opacity:0.7;}.bnav-item.active{color:var(--accent-light);}
+  .bnav-icon{font-size:1.1rem;line-height:1;}.bnav-label{font-size:0.55rem;letter-spacing:0.06em;text-transform:uppercase;margin-top:1px;}
+
+  /* ── OFFICES (NEW) ───────────────────────────────────────── */
+  .office-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(280px,1fr));gap:1.25rem;margin-top:1.5rem;}
+  .office-card{background:var(--surface);border-radius:12px;padding:1.5rem;border:1px solid var(--line);transition:box-shadow 0.2s;}
+  .office-card:hover{box-shadow:0 4px 24px rgba(0,0,0,0.08);}
+  .office-card-hdr{display:flex;justify-content:space-between;align-items:flex-start;margin-bottom:0.875rem;}
+  .office-name{font-family:var(--font-serif);font-size:1.1rem;font-weight:400;}
+  .office-city{font-size:0.72rem;color:var(--gray-400);margin-top:2px;letter-spacing:0.04em;}
+  .office-stat{display:inline-flex;align-items:center;gap:5px;background:var(--accent-pale);color:var(--accent);border:1px solid var(--accent-light);padding:3px 10px;border-radius:100px;font-size:0.68rem;letter-spacing:0.06em;white-space:nowrap;}
+  .office-stat.inactive{background:#fee2e2;color:#991b1b;border-color:#fecaca;}
+  .office-detail{font-size:0.82rem;color:var(--gray-500);display:flex;align-items:flex-start;gap:6px;margin-bottom:5px;}
+  .office-actions{display:flex;gap:8px;margin-top:1rem;padding-top:1rem;border-top:1px solid var(--line);}
+  .edit-btn{background:var(--gray-100);color:var(--gray-700);border:1px solid var(--line);padding:5px 14px;border-radius:100px;font-size:0.72rem;cursor:pointer;font-family:var(--font-main);transition:all 0.2s;letter-spacing:0.04em;}
+  .edit-btn:hover{background:var(--gray-200);}
+  .office-assign-sel{padding:5px 8px;border:1.5px solid var(--line);border-radius:8px;font-family:var(--font-main);font-size:0.75rem;background:var(--bg);color:var(--black);cursor:pointer;outline:none;max-width:150px;}
+  .office-assign-sel:focus{border-color:var(--accent);}
+
   @media(max-width:1100px){.metrics-grid{grid-template-columns:repeat(2,1fr);}}
   @media(max-width:900px){.dash-grid,.leave-grid,.att-grid-2{grid-template-columns:1fr;}.att-grid{grid-template-columns:repeat(3,1fr);}.f-row{grid-template-columns:1fr;}}
   @media(max-width:768px){
@@ -213,14 +209,14 @@
     .dash-grid,.leave-grid,.att-grid-2{grid-template-columns:1fr;}
     .att-grid{grid-template-columns:1fr 1fr;gap:0.75rem;margin-bottom:1.25rem;}
     .data-table{font-size:0.78rem;}.data-table th{font-size:0.6rem;padding-bottom:0.6rem;}.data-table td{padding:0.65rem 0;}
-    .leave-item{flex-direction:column;align-items:flex-start;gap:0.75rem;}
-    .leave-actions{width:100%;justify-content:flex-end;}
+    .leave-item{flex-direction:column;align-items:flex-start;gap:0.75rem;}.leave-actions{width:100%;justify-content:flex-end;}
     .phone-frame{max-width:100%;border-radius:20px;}
     .toast{bottom:calc(58px + env(safe-area-inset-bottom,0px) + 0.75rem);left:1rem;right:1rem;border-radius:12px;justify-content:center;}
     .modal-card{padding:1.5rem;border-radius:14px;max-height:95vh;}
     .f-row,.holiday-declare-row{grid-template-columns:1fr;flex-direction:column;}
     .att-hist-controls,.att-log-hdr{flex-direction:column;align-items:flex-start;}
     .cal-day-lbl{font-size:0.5rem;}.cal-cell{min-height:40px;padding:3px 2px;}.cal-day-num{font-size:0.75rem;}
+    .office-grid{grid-template-columns:1fr;}
   }
   @media(max-width:420px){
     .metrics-grid{grid-template-columns:1fr 1fr;}.att-grid{grid-template-columns:1fr 1fr;}
@@ -257,6 +253,7 @@
       <li class="nav-item"        data-tab="attendance"   onclick="switchTab('attendance',this)"><span class="nav-icon">📍</span> Attendance</li>
       <li class="nav-item"        data-tab="leave"        onclick="switchTab('leave',this)"><span class="nav-icon">🗓</span> Leave</li>
       <li class="nav-item" id="navEmployees" data-tab="employees" onclick="switchTab('employees',this)"><span class="nav-icon">👤</span> Employees</li>
+      <li class="nav-item" id="navOffices"   data-tab="offices"   onclick="switchTab('offices',this)"><span class="nav-icon">🏢</span> Offices</li>
       <li class="nav-item"        data-tab="reports"      onclick="switchTab('reports',this)"><span class="nav-icon">📄</span> Reports</li>
     </ul>
     <ul class="sidebar-nav" style="flex:none;margin-top:auto;">
@@ -318,7 +315,8 @@
         <div class="dash-card">
           <h3>GPS Punch</h3>
           <div class="phone-frame">
-            <div class="phone-header"><h4>📍 Attendance</h4><span style="color:rgba(255,255,255,0.4);font-size:0.7rem">Insurance Zone</span></div>
+            <!-- office_name shown here once GPS watch fetches geofence -->
+            <div class="phone-header"><h4>📍 Attendance</h4><span id="officeNameLabel" style="color:rgba(255,255,255,0.4);font-size:0.7rem">Loading…</span></div>
             <div class="phone-body">
               <div class="gps-map"><div class="geo-ring" id="geoRing"><div class="gps-pin">📍</div></div><div class="gps-distance" id="gpsDist">Waiting for GPS…</div></div>
               <div class="loc-box">
@@ -333,7 +331,6 @@
         </div>
       </div>
 
-      <!-- Employee Attendance History + clickable calendar (admin/manager) -->
       <div id="attHistory" style="display:none;margin-top:1.5rem">
         <div class="dash-card">
           <div class="att-hist-header">
@@ -355,7 +352,6 @@
         </div>
       </div>
 
-      <!-- Holiday Management (admin/manager) -->
       <div id="holidayPanel" style="display:none;margin-top:1.5rem">
         <div class="dash-card">
           <h3>Declare Holiday <span class="sub" id="holidayMonthLbl"></span></h3>
@@ -393,10 +389,24 @@
       </div>
     </div>
 
-    <!-- EMPLOYEES -->
+    <!-- EMPLOYEES — Office column + assign dropdown -->
     <div class="tab-pane" id="pane-employees">
-      <div class="page-header"><div><h1>Employee Directory</h1><p>Manage roles and access</p></div><button class="action-btn-sm" id="addEmpBtn" onclick="openAddEmp()">+ Add Employee</button></div>
-      <div class="dash-card"><h3 id="empDirTitle">All Staff <span class="sub">—</span></h3><div class="table-scroll"><table class="data-table"><thead><tr><th>Name</th><th>Email</th><th>Role</th><th>Dept</th><th>Status</th><th>Joined</th><th>Action</th></tr></thead><tbody id="empTableBody"><tr><td colspan="7" style="color:var(--gray-400)">Loading…</td></tr></tbody></table></div></div>
+      <div class="page-header"><div><h1>Employee Directory</h1><p>Manage roles and office assignments</p></div><button class="action-btn-sm" id="addEmpBtn" onclick="openAddEmp()">+ Add Employee</button></div>
+      <div class="dash-card"><h3 id="empDirTitle">All Staff <span class="sub">—</span></h3><div class="table-scroll"><table class="data-table">
+        <thead><tr><th>Name</th><th>Email</th><th>Role</th><th>Dept</th><th>Office</th><th>Status</th><th>Joined</th><th>Action</th></tr></thead>
+        <tbody id="empTableBody"><tr><td colspan="8" style="color:var(--gray-400)">Loading…</td></tr></tbody>
+      </table></div></div>
+    </div>
+
+    <!-- OFFICES (NEW) -->
+    <div class="tab-pane" id="pane-offices">
+      <div class="page-header">
+        <div><h1>Office Locations</h1><p>Manage branches and geo-fence zones</p></div>
+        <button class="action-btn-sm" id="addOfficeBtn" onclick="openAddOffice()">+ Add Office</button>
+      </div>
+      <div id="officeGrid" class="office-grid">
+        <p style="color:var(--gray-400)">Loading offices…</p>
+      </div>
     </div>
 
     <!-- REPORTS -->
@@ -409,7 +419,7 @@
           <div class="metric-card"><div class="metric-label">Holidays This Month</div><div class="metric-value" id="repHolidays">—</div><div class="metric-hint" id="repHolidaysHint">Declared</div></div>
           <div class="metric-card"><div class="metric-label">Working Days</div><div class="metric-value" id="repWorkingDays">—</div><div class="metric-hint">Excl. Sun + Holidays</div></div>
         </div>
-        <div class="dash-card" style="margin-top:1.5rem"><h3>Attendance Report — <span class="sub" id="reportMonth"></span></h3><div class="table-scroll"><table class="data-table"><thead><tr><th>Employee</th><th>Present</th><th>Absent</th><th>Late</th><th>Holidays</th><th>Attendance %</th></tr></thead><tbody id="reportTeamBody"><tr><td colspan="6" style="color:var(--gray-400)">Loading…</td></tr></tbody></table></div></div>
+        <div class="dash-card" style="margin-top:1.5rem"><h3>Attendance Report — <span class="sub" id="reportMonth"></span></h3><div class="table-scroll"><table class="data-table"><thead><tr><th>Employee</th><th>Office</th><th>Present</th><th>Absent</th><th>Late</th><th>Holidays</th><th>Attendance %</th></tr></thead><tbody id="reportTeamBody"><tr><td colspan="7" style="color:var(--gray-400)">Loading…</td></tr></tbody></table></div></div>
       </div>
       <div id="reportStaffView" style="display:none">
         <div class="page-header"><div><h1>My Attendance Report</h1><p id="reportStaffMonth">This month</p></div></div>
@@ -426,21 +436,48 @@
   </main>
 </div>
 
-<!-- ADD EMPLOYEE MODAL -->
+<!-- ADD EMPLOYEE MODAL — now includes office dropdown -->
 <div class="modal-overlay" id="addEmpModal">
   <div class="modal-card">
     <div class="modal-header"><h2>Add Employee</h2><button class="modal-close" onclick="closeAddEmp()">✕</button></div>
     <div class="f-group"><label>Full Name *</label><input type="text" id="empName" class="f-input" placeholder="Rahul Kumar"></div>
     <div class="f-group"><label>Email *</label><input type="email" id="empEmail" class="f-input" placeholder="rahul@insurancezone.co.in"></div>
     <div class="f-group"><label>Password *</label><input type="password" id="empPassword" class="f-input" placeholder="Min 8 characters"></div>
-    <div class="f-row"><div class="f-group"><label>Phone</label><input type="text" id="empPhone" class="f-input" placeholder="+91 9876543210"></div><div class="f-group"><label>Department</label><input type="text" id="empDept" class="f-input" placeholder="Sales"></div></div>
-    <div class="f-group"><label>Role</label><select id="empRole" class="f-input f-select"><option value="agent">Staff (Agent)</option><option value="manager">Manager</option><option value="viewer">Viewer</option><option value="admin">Admin</option></select></div>
+    <div class="f-row">
+      <div class="f-group"><label>Phone</label><input type="text" id="empPhone" class="f-input" placeholder="+91 9876543210"></div>
+      <div class="f-group"><label>Department</label><input type="text" id="empDept" class="f-input" placeholder="Sales"></div>
+    </div>
+    <div class="f-row">
+      <div class="f-group"><label>Role</label><select id="empRole" class="f-input f-select"><option value="agent">Staff (Agent)</option><option value="manager">Manager</option><option value="viewer">Viewer</option><option value="admin">Admin</option></select></div>
+      <div class="f-group"><label>Assign Office</label><select id="empOfficeId" class="f-input f-select"><option value="">— No Office Yet —</option></select></div>
+    </div>
     <button class="action-btn" style="width:100%;justify-content:center;display:flex;margin-top:0.5rem" onclick="saveEmployee()">Create Employee</button>
     <div class="modal-err" id="empModalErr"></div>
   </div>
 </div>
 
-<!-- MARK ATTENDANCE MODAL (admin/manager) -->
+<!-- ADD / EDIT OFFICE MODAL (NEW) -->
+<div class="modal-overlay" id="officeModal">
+  <div class="modal-card">
+    <div class="modal-header"><h2 id="officeModalTitle">Add Office</h2><button class="modal-close" onclick="closeOfficeModal()">✕</button></div>
+    <input type="hidden" id="officeModalId">
+    <div class="f-group"><label>Office Name *</label><input type="text" id="officeName" class="f-input" placeholder="Insurance Zone — Ghazipur HQ"></div>
+    <div class="f-group"><label>Address *</label><input type="text" id="officeAddress" class="f-input" placeholder="Anand Vihar Colony, RKBK"></div>
+    <div class="f-row">
+      <div class="f-group"><label>City *</label><input type="text" id="officeCity" class="f-input" placeholder="Ghazipur"></div>
+      <div class="f-group"><label>Geo-fence Radius (m)</label><input type="number" id="officeRadius" class="f-input" value="200" min="50" max="1000"></div>
+    </div>
+    <div class="f-row">
+      <div class="f-group"><label>Latitude *</label><input type="number" id="officeLat" class="f-input" placeholder="25.5747" step="any"></div>
+      <div class="f-group"><label>Longitude *</label><input type="number" id="officeLng" class="f-input" placeholder="83.5718" step="any"></div>
+    </div>
+    <p style="font-size:0.75rem;color:var(--gray-400);margin-bottom:1rem;line-height:1.5">💡 To get coordinates: open Google Maps → right-click your office location → the first value is latitude, second is longitude.</p>
+    <button class="action-btn" style="width:100%;justify-content:center;display:flex" onclick="saveOffice()">Save Office</button>
+    <div class="modal-err" id="officeModalErr"></div>
+  </div>
+</div>
+
+<!-- MARK ATTENDANCE MODAL -->
 <div class="modal-overlay" id="markAttModal">
   <div class="modal-card" style="max-width:420px">
     <div class="modal-header"><h2>Mark Attendance</h2><button class="modal-close" onclick="closeMarkAtt()">✕</button></div>
@@ -448,13 +485,12 @@
       <div><span style="color:var(--gray-500)">Employee:</span> <b id="markAttEmpName"></b></div>
       <div style="margin-top:4px"><span style="color:var(--gray-500)">Date:</span> <b id="markAttDateDisp"></b></div>
     </div>
-    <input type="hidden" id="markAttDateHidden">
-    <input type="hidden" id="markAttEmpIdHidden">
+    <input type="hidden" id="markAttDateHidden"><input type="hidden" id="markAttEmpIdHidden">
     <div class="f-row">
       <div class="f-group"><label>Punch In — IST *</label><input type="time" id="markAttIn" class="f-input" style="border-radius:10px"></div>
       <div class="f-group"><label>Punch Out — IST</label><input type="time" id="markAttOut" class="f-input" style="border-radius:10px"></div>
     </div>
-    <div class="f-group"><label>Note (optional)</label><input type="text" id="markAttNote" class="f-input" placeholder="e.g. Verified physically present, forgot to punch"></div>
+    <div class="f-group"><label>Note (optional)</label><input type="text" id="markAttNote" class="f-input" placeholder="e.g. Verified physically present"></div>
     <div style="display:flex;gap:0.75rem;margin-top:0.5rem">
       <button class="action-btn" style="flex:1;justify-content:center;display:flex" onclick="saveMarkAtt()">Save Attendance</button>
       <button class="action-btn-sm" onclick="closeMarkAtt()">Cancel</button>
@@ -509,23 +545,13 @@ function parseUTC(iso) {
   if (!s.endsWith('Z') && !s.match(/[+-]\d{2}:\d{2}$/)) return new Date(s + 'Z');
   return new Date(s);
 }
-function fmtDate(iso) {
-  if (!iso) return '—';
-  return parseUTC(iso).toLocaleDateString('en-IN',{day:'numeric',month:'short',year:'numeric',timeZone:'Asia/Kolkata'});
-}
-function fmtTime(iso) {
-  if (!iso) return '—';
-  return parseUTC(iso).toLocaleTimeString('en-IN',{hour:'2-digit',minute:'2-digit',timeZone:'Asia/Kolkata'});
-}
-// Converts ISO UTC string → "HH:MM" in IST (for pre-filling time inputs)
+function fmtDate(iso) { if (!iso) return '—'; return parseUTC(iso).toLocaleDateString('en-IN',{day:'numeric',month:'short',year:'numeric',timeZone:'Asia/Kolkata'}); }
+function fmtTime(iso) { if (!iso) return '—'; return parseUTC(iso).toLocaleTimeString('en-IN',{hour:'2-digit',minute:'2-digit',timeZone:'Asia/Kolkata'}); }
 function toHHMM(iso) {
-  if (!iso) return '';
-  const d = parseUTC(iso); if (!d) return '';
-  const istMs = d.getTime() + (5.5 * 60 * 60 * 1000);
-  const ist = new Date(istMs);
+  if (!iso) return ''; const d = parseUTC(iso); if (!d) return '';
+  const istMs = d.getTime() + (5.5 * 60 * 60 * 1000); const ist = new Date(istMs);
   return String(ist.getUTCHours()).padStart(2,'0') + ':' + String(ist.getUTCMinutes()).padStart(2,'0');
 }
-// Formats a "YYYY-MM-DD" string without UTC conversion issues
 function fmtDateStr(ds) {
   const [y,m,d] = ds.split('-').map(Number);
   const months = ['Jan','Feb','Mar','Apr','May','Jun','Jul','Aug','Sep','Oct','Nov','Dec'];
@@ -539,7 +565,17 @@ function showToast(msg) {
 }
 function isAdminOrManager() { const u=getUser(); return u&&(u.role==='admin'||u.role==='manager'); }
 
-window.addEventListener('DOMContentLoaded', () => {
+// ── Offices cache (populated once, reused for employee dropdowns) ──
+let officesList = [];
+async function _ensureOffices() {
+  if (officesList.length) return;
+  try {
+    const res = await api('/api/offices/');
+    if (res && res.ok) officesList = await res.json();
+  } catch {}
+}
+
+window.addEventListener('DOMContentLoaded', async () => {
   const user=getUser(); if(!user)return;
   const role=user.role||'agent'; const roleDisplay=role==='agent'?'Staff':cap(role);
   document.getElementById('sidebarRole').textContent=roleDisplay+' Portal';
@@ -554,13 +590,24 @@ window.addEventListener('DOMContentLoaded', () => {
   const ald=document.getElementById('attLogDate');if(ald)ald.textContent=ds;
   const rm=document.getElementById('reportMonth');if(rm)rm.textContent=new Date().toLocaleDateString('en-IN',{month:'long',year:'numeric',timeZone:'Asia/Kolkata'});
   const rsp=document.getElementById('reportStaffMonth');if(rsp)rsp.textContent=new Date().toLocaleDateString('en-IN',{month:'long',year:'numeric',timeZone:'Asia/Kolkata'});
-  if(role==='agent'||role==='viewer'){const ne=document.getElementById('navEmployees');if(ne)ne.style.display='none';const be=document.getElementById('bnavEmployees');if(be)be.style.display='none';}
+
+  // Hide Employees + Offices tabs from agent/viewer
+  if(role==='agent'||role==='viewer'){
+    const ne=document.getElementById('navEmployees');if(ne)ne.style.display='none';
+    const no=document.getElementById('navOffices');if(no)no.style.display='none';
+    const be=document.getElementById('bnavEmployees');if(be)be.style.display='none';
+    const bo=document.getElementById('bnavOffices');if(bo)bo.style.display='none';
+  }
+
   const mtbGreet=document.getElementById('mtbGreet');if(mtbGreet)mtbGreet.textContent=user.name||'Insurance Zone';
   const mtbRole=document.getElementById('mtbRole');if(mtbRole)mtbRole.textContent=roleDisplay;
   const mtbAv=document.getElementById('mtbAvatar');if(mtbAv)mtbAv.textContent=(user.name||'IZ')[0].toUpperCase();
   const todayStr=getTodayIST();
   const ls=document.getElementById('leaveStart');if(ls)ls.min=todayStr;
   const le=document.getElementById('leaveEnd');if(le)le.min=todayStr;
+
+  // Pre-load offices list so dropdowns are ready
+  if (isAdminOrManager()) await _ensureOffices();
   loadOverview();
 });
 
@@ -571,7 +618,7 @@ function switchTab(tab,el){
   document.querySelectorAll('[data-tab="'+tab+'"]').forEach(i=>i.classList.add('active'));
   if(el)el.classList.add('active');
   if(tab==='attendance')startGPSWatch();else stopGPSWatch();
-  const loaders={overview:loadOverview,leads:loadLeads,attendance:loadAttendance,leave:loadLeave,employees:loadEmployees,reports:loadReports};
+  const loaders={overview:loadOverview,leads:loadLeads,attendance:loadAttendance,leave:loadLeave,employees:loadEmployees,offices:loadOffices,reports:loadReports};
   if(loaders[tab])loaders[tab]();
 }
 
@@ -594,7 +641,6 @@ async function loadMetrics(){
   if(rEl){rEl.textContent=fmtRevenue(d.monthly_revenue||0);if(canEdit){rEl.classList.add('editable');rEl.onclick=()=>editMetric('monthly_revenue',d.monthly_revenue||0,'Monthly Revenue','Enter amount in Lakhs (e.g. 18.4)');}}
   const rhEl=document.getElementById('metricRevenueHint');if(rhEl)rhEl.textContent=canEdit?'✏️ Click to edit':'This month';
 }
-
 async function editMetric(key,cur,label,hint){
   const v=prompt('Update '+label+'\n'+hint,cur);if(v===null||v.trim()==='')return;
   const n=parseFloat(v);if(isNaN(n)||n<0){showToast('Enter a valid positive number');return;}
@@ -602,14 +648,12 @@ async function editMetric(key,cur,label,hint){
   if(res&&res.ok){showToast(label+' updated ✓');loadMetrics();}
   else{const d=await res?.json();showToast('Error: '+(d?.detail||'Update failed'));}
 }
-
 async function loadStats(){
   const res=await api('/api/enquiry/stats/summary');if(!res||!res.ok)return;
   const d=await res.json();
   const ml=document.getElementById('metricLeads');if(ml)ml.textContent=(d.total||0).toLocaleString('en-IN');
   const mh=document.getElementById('metricLeadsHint');if(mh)mh.textContent='Today: '+(d.today||0)+' new';
 }
-
 async function loadTodayAttOverview(){
   if(isAdminOrManager()){
     const res=await api('/api/attendance/today');if(!res||!res.ok)return;
@@ -620,7 +664,7 @@ async function loadTodayAttOverview(){
     if(mp)mp.textContent=(d.present||0)+'/'+total;if(mph)mph.textContent=(d.absent||0)+' absent · '+(d.on_leave||0)+' on leave';
     const list=document.getElementById('todayAttList');if(!list)return;
     const all=[...(d.records||[]),...(d.absent_employees||[]).map(e=>({employee_name:e.name,punch_in:null,status:'Absent'}))];
-    list.innerHTML=all.map(r=>{const nm=r.employee_name||'?';const ini=nm.split(' ').map(n=>n[0]).join('').toUpperCase().slice(0,2);const on=!!r.punch_in;return`<div class="emp-item"><div class="emp-avatar" style="background:${on?'#eef4f1':'#f0f0ec'};color:${on?'#315b7a':'#8a8a85'}">${ini}</div><div><div class="emp-name">${nm}</div><div class="emp-role">${on?'Present':(r.status||'Absent')}</div></div><div style="margin-left:auto"><div class="${on?'dot-on':'dot-off'}"></div></div></div>`;}).join('')||'<p style="color:var(--gray-400);font-size:0.85rem">No data yet</p>';
+    list.innerHTML=all.map(r=>{const nm=r.employee_name||'?';const ini=nm.split(' ').map(n=>n[0]).join('').toUpperCase().slice(0,2);const on=!!r.punch_in;return`<div class="emp-item"><div class="emp-avatar" style="background:${on?'#eef4f1':'#f0f0ec'};color:${on?'#315b7a':'#8a8a85'}">${ini}</div><div><div class="emp-name">${nm}</div><div class="emp-role">${r.office_name?r.office_name+' · ':''} ${on?'Present':(r.status||'Absent')}</div></div><div style="margin-left:auto"><div class="${on?'dot-on':'dot-off'}"></div></div></div>`;}).join('')||'<p style="color:var(--gray-400);font-size:0.85rem">No data yet</p>';
   }else{
     const now=new Date();const res=await api('/api/attendance/me?month='+(now.getMonth()+1)+'&year='+now.getFullYear());if(!res||!res.ok)return;
     const d=await res.json();const todayStr=getTodayIST();const todayRec=(d.records||[]).find(r=>r.date===todayStr);
@@ -631,7 +675,6 @@ async function loadTodayAttOverview(){
     const list=document.getElementById('todayAttList');if(list)list.innerHTML='<p style="color:var(--gray-400);font-size:0.85rem">Use Attendance tab to punch in/out.</p>';
   }
 }
-
 async function loadRecentEnquiries(){
   const res=await api('/api/enquiry/?limit=5');if(!res||!res.ok)return;
   const d=await res.json();const tb=document.getElementById('recentEnqBody');if(!tb)return;
@@ -652,10 +695,8 @@ async function fetchHolidays(month,year){
   try{const res=await api('/api/holidays/?month='+month+'&year='+year);if(res&&res.ok)return await res.json();}catch{}return[];
 }
 function getWorkingDays(year,month,holidays){
-  const daysInMonth=new Date(year,month,0).getDate();
-  const hSet=new Set((holidays||[]).map(h=>h.date));let count=0;
-  for(let d=1;d<=daysInMonth;d++){const ds=year+'-'+String(month).padStart(2,'0')+'-'+String(d).padStart(2,'0');if(new Date(year,month-1,d).getDay()!==0&&!hSet.has(ds))count++;}
-  return count;
+  const daysInMonth=new Date(year,month,0).getDate();const hSet=new Set((holidays||[]).map(h=>h.date));let count=0;
+  for(let d=1;d<=daysInMonth;d++){const ds=year+'-'+String(month).padStart(2,'0')+'-'+String(d).padStart(2,'0');if(new Date(year,month-1,d).getDay()!==0&&!hSet.has(ds))count++;}return count;
 }
 async function loadHolidayPanel(){
   const panel=document.getElementById('holidayPanel');if(!panel)return;panel.style.display='block';
@@ -676,7 +717,7 @@ async function declareHoliday(){
   const res=await api('/api/holidays/',{method:'POST',body:JSON.stringify({date,name})});if(!res)return;
   const data=await res.json();
   if(res.ok){showToast(name+' declared as holiday ✓');document.getElementById('holidayName').value='';await refreshHolidayList();}
-  else{showToast(data.detail||'Failed to declare holiday');}
+  else showToast(data.detail||'Failed to declare holiday');
 }
 async function removeHoliday(date,name){
   if(!confirm('Remove "'+name+'" holiday on '+date+'?'))return;
@@ -698,8 +739,7 @@ function setStaffView(view){
   if(view==='calendar'){
     if(table)table.style.display='none';
     if(!wrap){wrap=document.createElement('div');wrap.id='staffCalWrap';const card=table?table.closest('.dash-card'):null;if(card)card.appendChild(wrap);}
-    wrap.style.display='';
-    const now=new Date();wrap.innerHTML=renderAttCalendar(staffAttRecords,now.getMonth()+1,now.getFullYear(),myMonthHolidays,false);
+    wrap.style.display='';const now=new Date();wrap.innerHTML=renderAttCalendar(staffAttRecords,now.getMonth()+1,now.getFullYear(),myMonthHolidays,false);
   }else{if(table)table.style.display='';const w2=document.getElementById('staffCalWrap');if(w2)w2.style.display='none';}
 }
 
@@ -716,33 +756,22 @@ async function initAttHistory(){
   const prev=sel.value;
   sel.innerHTML='<option value="">— Select Employee —</option>'+staffCache.map(u=>`<option value="${u.id}">${u.name} (${u.role==='agent'?'Staff':cap(u.role)})</option>`).join('');
   const me=getUser();const defaultId=prev||(me?me.user_id:'');
-  if(defaultId){
-    sel.value=defaultId;histEmpId=defaultId;
-    // also capture name
-    const opt=sel.options[sel.selectedIndex];
-    histEmpName=opt?opt.text.split(' (')[0]:'';
-    await loadAttHistory();
-  }
+  if(defaultId){sel.value=defaultId;histEmpId=defaultId;const opt=sel.options[sel.selectedIndex];histEmpName=opt?opt.text.split(' (')[0]:'';await loadAttHistory();}
 }
 
 async function onHistEmpChange(){
   histEmpId=document.getElementById('histEmpSelect').value||null;
-  const sel=document.getElementById('histEmpSelect');
-  histEmpName=sel.options[sel.selectedIndex]?sel.options[sel.selectedIndex].text.split(' (')[0]:'';
+  const sel=document.getElementById('histEmpSelect');histEmpName=sel.options[sel.selectedIndex]?sel.options[sel.selectedIndex].text.split(' (')[0]:'';
   if(!histEmpId){const c=document.getElementById('histContent');if(c)c.innerHTML='<p style="color:var(--gray-400);font-size:0.875rem;padding:2rem 0;text-align:center">Select an employee above</p>';return;}
   await loadAttHistory();
 }
-
 async function changeHistMonth(delta){
   histMonth+=delta;if(histMonth>12){histMonth=1;histYear++;}if(histMonth<1){histMonth=12;histYear--;}
   _updateHistMonthLabel();if(histEmpId)await loadAttHistory();
 }
-
 function setHistView(view){
-  histView=view;
-  const c=document.getElementById('btnHistCal');const t=document.getElementById('btnHistTable');
-  if(c)c.classList.toggle('active',view==='calendar');if(t)t.classList.toggle('active',view==='table');
-  if(histEmpId)loadAttHistory();
+  histView=view;const c=document.getElementById('btnHistCal');const t=document.getElementById('btnHistTable');
+  if(c)c.classList.toggle('active',view==='calendar');if(t)t.classList.toggle('active',view==='table');if(histEmpId)loadAttHistory();
 }
 function _updateHistMonthLabel(){const el=document.getElementById('histMonthLabel');if(el)el.textContent=new Date(histYear,histMonth-1,1).toLocaleString('en-IN',{month:'long',year:'numeric'});}
 
@@ -754,17 +783,11 @@ async function loadAttHistory(){
   const [res,holidays]=await Promise.all([api(url),fetchHolidays(histMonth,histYear)]);
   if(!res||!res.ok){content.innerHTML='<p style="color:var(--red);font-size:0.875rem;padding:1rem 0">Could not load records.</p>';return;}
   const d=await res.json();const records=d.records||[];
-  // clickable=true for admin/manager so they can click to mark/edit
-  content.innerHTML=histView==='calendar'
-    ?renderAttCalendar(records,histMonth,histYear,holidays,isAdminOrManager())
-    :renderAttTableHist(records);
+  content.innerHTML=histView==='calendar'?renderAttCalendar(records,histMonth,histYear,holidays,isAdminOrManager()):renderAttTableHist(records);
 }
 
-// ── CALENDAR RENDERER ─────────────────────────────────────────
-// clickable=true: non-future, non-sunday cells get onclick → opens mark-attendance modal
 function renderAttCalendar(records,month,year,holidays=[],clickable=false){
-  const map={};records.forEach(r=>{map[r.date]=r;});
-  const hMap={};holidays.forEach(h=>{hMap[h.date]=h.name;});
+  const map={};records.forEach(r=>{map[r.date]=r;});const hMap={};holidays.forEach(h=>{hMap[h.date]=h.name;});
   const today=getTodayIST();const daysInMon=new Date(year,month,0).getDate();
   const firstDow=new Date(year,month-1,1).getDay();const startOff=firstDow===0?6:firstDow-1;
   const dows=['Mon','Tue','Wed','Thu','Fri','Sat','Sun'];
@@ -773,8 +796,7 @@ function renderAttCalendar(records,month,year,holidays=[],clickable=false){
   for(let i=0;i<startOff;i++)html+='<div class="cal-cell cal-empty"></div>';
   for(let d=1;d<=daysInMon;d++){
     const ds=year+'-'+String(month).padStart(2,'0')+'-'+String(d).padStart(2,'0');
-    const dow=new Date(year,month-1,d).getDay();
-    const isSun=dow===0,isFut=ds>today,isTod=ds===today,rec=map[ds],isHol=!!hMap[ds];
+    const dow=new Date(year,month-1,d).getDay();const isSun=dow===0,isFut=ds>today,isTod=ds===today,rec=map[ds],isHol=!!hMap[ds];
     const isManual=rec&&rec.manual_entry;
     let cls='cal-cell',lbl='';
     if(isSun){cls+=' cal-sunday';lbl='Off';}
@@ -785,29 +807,20 @@ function renderAttCalendar(records,month,year,holidays=[],clickable=false){
       else if(rec.is_late&&rec.punch_in){cls+=' cal-late';lbl='Late';}
       else if(rec.punch_in){cls+=' cal-present';lbl='✓';}
       else{cls+=' cal-absent';lbl='Abs';}
-    }else if(isTod){cls+=' cal-today';lbl='Today';}
-    else if(isFut){cls+=' cal-future';}
-    else{cls+=' cal-absent';lbl='Abs';}
-    // Manual-entry: dashed inner ring so colour is still visible
+    }else if(isTod){cls+=' cal-today';lbl='Today';}else if(isFut){cls+=' cal-future';}else{cls+=' cal-absent';lbl='Abs';}
     if(isManual)cls+=' cal-manual';
-    // Clickable for admin/manager (not sunday, not future)
-    const canClick=clickable&&!isSun&&!isFut;
-    if(canClick)cls+=' cal-clickable';
-    // Build tooltip
+    const canClick=clickable&&!isSun&&!isFut;if(canClick)cls+=' cal-clickable';
     let title='';
     if(isHol)title=hMap[ds];
-    else if(rec&&rec.punch_in)title=fmtTime(rec.punch_in)+(rec.punch_out?' – '+fmtTime(rec.punch_out):'')+(isManual?' ✏ Marked by '+rec.marked_by:'');
+    else if(rec&&rec.punch_in)title=fmtTime(rec.punch_in)+(rec.punch_out?' – '+fmtTime(rec.punch_out):'')+(isManual?' ✏ '+rec.marked_by:'');
     else if(canClick)title='Click to mark attendance';
-    // Data attrs for click handler (safe: no quotes in values needed)
     const dataAttrs=canClick?` data-date="${ds}" data-in="${toHHMM(rec?rec.punch_in:'')}" data-out="${toHHMM(rec?rec.punch_out:'')}" onclick="handleCalClick(this)"`:'';
     const manualBadge=isManual?`<span class="cal-manual-badge" title="Marked by ${rec.marked_by||'admin'}">✏</span>`:'';
     html+=`<div class="${cls}"${dataAttrs} title="${title}"><span class="cal-day-num">${d}</span><span class="cal-day-lbl">${lbl}</span>${manualBadge}</div>`;
   }
   html+='</div>';
-  const present=records.filter(r=>r.punch_in&&r.status!=='on-leave').length;
-  const late=records.filter(r=>r.is_late).length;
-  const leave=records.filter(r=>r.status==='on-leave').length;
-  const manual=records.filter(r=>r.manual_entry).length;
+  const present=records.filter(r=>r.punch_in&&r.status!=='on-leave').length;const late=records.filter(r=>r.is_late).length;
+  const leave=records.filter(r=>r.status==='on-leave').length;const manual=records.filter(r=>r.manual_entry).length;
   html+=`<div class="cal-legend">
     <div class="cal-leg"><div class="cal-leg-dot" style="background:#dcfce7;border:1px solid #86efac"></div>Present (${present})</div>
     <div class="cal-leg"><div class="cal-leg-dot" style="background:#fef9c3;border:1px solid #fde047"></div>Late (${late})</div>
@@ -816,7 +829,7 @@ function renderAttCalendar(records,month,year,holidays=[],clickable=false){
     <div class="cal-leg"><div class="cal-leg-dot" style="background:#fee2e2;border:1px solid #fca5a5"></div>Absent</div>
     <div class="cal-leg"><div class="cal-leg-dot" style="background:var(--gray-100)"></div>Sunday</div>
     ${manual>0?`<div class="cal-leg"><span style="font-size:0.85rem">✏</span> Admin-marked (${manual})</div>`:''}
-    ${clickable?'<div class="cal-leg" style="color:var(--accent)">💡 Click any day to mark / edit attendance</div>':''}
+    ${clickable?'<div class="cal-leg" style="color:var(--accent)">💡 Click any day to mark / edit</div>':''}
   </div></div>`;
   return html;
 }
@@ -826,55 +839,37 @@ function renderAttTableHist(records){
   return`<div class="table-scroll"><table class="data-table"><thead><tr><th>Date</th><th>Punch In</th><th>Punch Out</th><th>Hours</th><th>Status</th><th>Source</th></tr></thead><tbody>${records.map(r=>`<tr><td><b>${fmtDate(r.date)}</b></td><td class="${r.punch_in?'att-in':''}">${r.punch_in?fmtTime(r.punch_in):'—'}</td><td class="${r.punch_out?'att-out':''}">${r.punch_out?fmtTime(r.punch_out):'—'}</td><td>${r.working_hours!=null?r.working_hours+'h':'—'}</td><td>${r.is_late?'<span class="pill-late">LATE</span>':(r.status||'—')}</td><td>${r.manual_entry?'<span style="color:#6d28d9;font-size:0.72rem">✏ Admin</span>':'GPS'}</td></tr>`).join('')}</tbody></table></div>`;
 }
 
-// ── ADMIN MARK ATTENDANCE ─────────────────────────────────────
-function handleCalClick(el){
-  if(!isAdminOrManager()||!histEmpId)return;
-  openMarkAtt(el.dataset.date,histEmpId,histEmpName,el.dataset.in,el.dataset.out);
-}
-
+function handleCalClick(el){if(!isAdminOrManager()||!histEmpId)return;openMarkAtt(el.dataset.date,histEmpId,histEmpName,el.dataset.in,el.dataset.out);}
 function openMarkAtt(date,empId,empName,existingIn,existingOut){
-  document.getElementById('markAttDateDisp').textContent=fmtDateStr(date);
-  document.getElementById('markAttEmpName').textContent=empName;
-  document.getElementById('markAttDateHidden').value=date;
-  document.getElementById('markAttEmpIdHidden').value=empId;
-  document.getElementById('markAttIn').value=existingIn||'';
-  document.getElementById('markAttOut').value=existingOut||'';
-  document.getElementById('markAttNote').value='';
-  document.getElementById('markAttErr').textContent='';
+  document.getElementById('markAttDateDisp').textContent=fmtDateStr(date);document.getElementById('markAttEmpName').textContent=empName;
+  document.getElementById('markAttDateHidden').value=date;document.getElementById('markAttEmpIdHidden').value=empId;
+  document.getElementById('markAttIn').value=existingIn||'';document.getElementById('markAttOut').value=existingOut||'';
+  document.getElementById('markAttNote').value='';document.getElementById('markAttErr').textContent='';
   document.getElementById('markAttModal').classList.add('open');
 }
-
 function closeMarkAtt(){document.getElementById('markAttModal').classList.remove('open');}
-
 async function saveMarkAtt(){
-  const empId=document.getElementById('markAttEmpIdHidden').value;
-  const date=document.getElementById('markAttDateHidden').value;
-  const pIn=document.getElementById('markAttIn').value;
-  const pOut=document.getElementById('markAttOut').value;
-  const note=document.getElementById('markAttNote').value.trim();
-  const errEl=document.getElementById('markAttErr');errEl.textContent='';
+  const empId=document.getElementById('markAttEmpIdHidden').value;const date=document.getElementById('markAttDateHidden').value;
+  const pIn=document.getElementById('markAttIn').value;const pOut=document.getElementById('markAttOut').value;
+  const note=document.getElementById('markAttNote').value.trim();const errEl=document.getElementById('markAttErr');errEl.textContent='';
   if(!pIn){errEl.textContent='Punch In time is required';return;}
   if(pOut&&pOut<pIn){errEl.textContent='Punch Out cannot be before Punch In';return;}
   const res=await api('/api/attendance/admin-mark',{method:'POST',body:JSON.stringify({employee_id:empId,date,punch_in:pIn,punch_out:pOut||null,note:note||null})});
-  if(!res)return;
-  const data=await res.json();
+  if(!res)return;const data=await res.json();
   if(res.ok){showToast(data.message||'Attendance marked ✓');closeMarkAtt();await loadAttHistory();}
-  else{errEl.textContent=data.detail||'Failed to mark attendance';}
+  else errEl.textContent=data.detail||'Failed to mark attendance';
 }
 
 async function loadTeamAttendance(){
-  const res=await api('/api/attendance/today');if(!res||!res.ok)return;
-  const d=await res.json();
+  const res=await api('/api/attendance/today');if(!res||!res.ok)return;const d=await res.json();
   const l1=document.getElementById('attL1');if(l1)l1.textContent='Present Today';
   const l2=document.getElementById('attL2');if(l2)l2.textContent='Absent';
   const l3=document.getElementById('attL3');if(l3)l3.textContent='On Leave';
   const c1=document.getElementById('attCol1');if(c1)c1.textContent='Employee';
-  document.getElementById('attV1').textContent=d.present||0;
-  document.getElementById('attV2').textContent=d.absent||0;
-  document.getElementById('attV3').textContent=d.on_leave||0;
+  document.getElementById('attV1').textContent=d.present||0;document.getElementById('attV2').textContent=d.absent||0;document.getElementById('attV3').textContent=d.on_leave||0;
   const tb=document.getElementById('attLogBody');if(!tb)return;
   const rows=[
-    ...(d.records||[]).map(r=>`<tr><td><b>${r.employee_name}</b></td><td class="${r.punch_in?'att-in':''}">${r.punch_in?fmtTime(r.punch_in):'—'}</td><td class="${r.punch_out?'att-out':''}">${r.punch_out?fmtTime(r.punch_out):'—'}</td><td>${r.is_late?'<span class="pill-late">LATE</span>':(r.status||'—')}</td></tr>`),
+    ...(d.records||[]).map(r=>`<tr><td><b>${r.employee_name}</b><span style="font-size:0.7rem;color:var(--gray-400);display:block">${r.office_name||''}</span></td><td class="${r.punch_in?'att-in':''}">${r.punch_in?fmtTime(r.punch_in):'—'}</td><td class="${r.punch_out?'att-out':''}">${r.punch_out?fmtTime(r.punch_out):'—'}</td><td>${r.is_late?'<span class="pill-late">LATE</span>':(r.status||'—')}</td></tr>`),
     ...(d.absent_employees||[]).map(e=>`<tr><td><b>${e.name}</b></td><td>—</td><td>—</td><td style="color:var(--red)">Absent</td></tr>`),
   ];
   tb.innerHTML=rows.join('')||'<tr><td colspan="4" style="color:var(--gray-400)">No records today</td></tr>';
@@ -883,8 +878,7 @@ async function loadTeamAttendance(){
 async function loadMyAttendance(){
   const now=new Date();const month=now.getMonth()+1;const year=now.getFullYear();
   const [res,holidays]=await Promise.all([api('/api/attendance/me?month='+month+'&year='+year),fetchHolidays(month,year)]);
-  if(!res||!res.ok)return;
-  const d=await res.json();
+  if(!res||!res.ok)return;const d=await res.json();
   const l1=document.getElementById('attL1');if(l1)l1.textContent='My Present Days';
   const l2=document.getElementById('attL2');if(l2)l2.textContent='My Absent Days';
   const l3=document.getElementById('attL3');if(l3)l3.textContent='My Late Days';
@@ -910,10 +904,20 @@ async function restorePunchState(){
   else if(rec&&rec.punch_in&&rec.punch_out){btn.disabled=true;btn.innerHTML='<span>✅ Day Complete</span>';if(note)note.textContent='Worked '+(rec.working_hours||0)+'h today';}
 }
 
-// ── GPS WATCH ──────────────────────────────────────────────────
+// ── GPS WATCH — shows office name from geofence response ──────
 let watchId=null,lastGPS=null,officeCoords=null;
 async function startGPSWatch(){
-  if(!officeCoords){try{const res=await api('/api/attendance/geofence');if(res&&res.ok)officeCoords=await res.json();}catch{}}
+  if(!officeCoords){
+    try{
+      const res=await api('/api/attendance/geofence');
+      if(res&&res.ok){
+        officeCoords=await res.json();
+        // Show the employee's assigned office name in the phone header
+        const lbl=document.getElementById('officeNameLabel');
+        if(lbl)lbl.textContent=officeCoords.office_name||'Insurance Zone';
+      }
+    }catch{}
+  }
   if(!navigator.geolocation){const s=document.getElementById('gpsLocStatus');if(s)s.textContent='❌ GPS not supported';return;}
   if(watchId!==null)return;
   const dot=document.getElementById('liveDot');if(dot)dot.style.display='inline-block';
@@ -925,7 +929,7 @@ async function startGPSWatch(){
       if(locV)locV.textContent=lat.toFixed(5)+', '+lng.toFixed(5);
       if(officeCoords){
         const d=haversineJS(lat,lng,officeCoords.lat,officeCoords.lng);const inside=d<=officeCoords.radius_meters;
-        if(dist){dist.textContent=d.toFixed(0)+'m from office';dist.className='gps-distance '+(inside?'inside':'outside');}
+        if(dist){dist.textContent=d.toFixed(0)+'m from '+(officeCoords.office_name||'office');dist.className='gps-distance '+(inside?'inside':'outside');}
         if(ring){ring.classList.toggle('inside',inside);ring.classList.toggle('outside',!inside);}
         if(locS){locS.textContent=inside?`✅ Inside zone · ${d.toFixed(0)}m away`:`❌ Outside zone · ${d.toFixed(0)}m away (max ${officeCoords.radius_meters}m)`;locS.style.color=inside?'var(--accent)':'var(--red)';}
       }
@@ -958,7 +962,7 @@ async function togglePunch(){
     if(res.ok){
       if(!isPunchedIn){if(note)note.textContent='Punched in at '+fmtTime(data.punch_in)+(data.is_late?' · ⚠️ Late':'');if(locS){locS.textContent='Inside zone · '+(data.distance_from_office_m||0).toFixed(0)+'m away';locS.style.color='var(--accent)';}showToast(data.message||'Punched IN');btn.disabled=false;}
       else{btn.disabled=true;btn.innerHTML='<span>✅ Day Complete</span>';if(note)note.textContent='Worked '+(data.working_hours||0)+'h today';if(locS){locS.textContent='Punch recorded.';locS.style.color='var(--accent)';}showToast(data.message||'Punched OUT');stopGPSWatch();}
-    }else{_revertPunch(btn,isPunchedIn,note,locS,data.detail||'Punch failed');}
+    }else _revertPunch(btn,isPunchedIn,note,locS,data.detail||'Punch failed');
   }catch{_revertPunch(btn,isPunchedIn,note,locS,'Network error');}
 }
 function _revertPunch(btn,wasPunchedIn,note,locS,errMsg){
@@ -966,6 +970,112 @@ function _revertPunch(btn,wasPunchedIn,note,locS,errMsg){
   if(!wasPunchedIn){btn.className='punch-btn';btn.innerHTML='<span id="punchIcon">⏱</span><span id="punchText">Punch In</span>';}
   else{btn.className='punch-btn out';btn.innerHTML='<span id="punchIcon">⏹</span><span id="punchText">Punch Out</span>';}
   if(note)note.textContent='';if(locS){locS.textContent=errMsg;locS.style.color='var(--red)';}showToast(errMsg);
+}
+
+// ═══ OFFICES (NEW) ════════════════════════════════════════════
+async function loadOffices(){
+  await _ensureOffices();
+  const grid=document.getElementById('officeGrid');if(!grid)return;
+  if(!officesList.length){grid.innerHTML='<p style="color:var(--gray-400)">No offices yet. Click "+ Add Office" to create the first one.</p>';return;}
+  const me=getUser();const isAdmin=me&&me.role==='admin';
+  grid.innerHTML=officesList.map(o=>`
+    <div class="office-card">
+      <div class="office-card-hdr">
+        <div>
+          <div class="office-name">${o.name}</div>
+          <div class="office-city">📍 ${o.city}</div>
+        </div>
+        <span class="office-stat ${o.is_active?'':'inactive'}">${o.is_active?'Active':'Inactive'}</span>
+      </div>
+      <div class="office-detail"><span>🏠</span><span>${o.address}</span></div>
+      <div class="office-detail"><span>🎯</span><span>Geo-fence: ${o.radius_meters}m radius</span></div>
+      <div class="office-detail"><span>🌐</span><span>${o.lat.toFixed(4)}, ${o.lng.toFixed(4)}</span></div>
+      <div class="office-detail"><span>👥</span><span><b>${o.staff_count||0}</b> staff assigned</span></div>
+      ${isAdmin?`<div class="office-actions">
+        <button class="edit-btn" onclick="openEditOffice(${JSON.stringify(o).replace(/"/g,'&quot;')})">Edit</button>
+        <button class="remove-btn" onclick="deleteOffice('${o.id}','${o.name}')">Delete</button>
+        ${o.is_active?`<button class="edit-btn" style="margin-left:auto" onclick="toggleOfficeActive('${o.id}',false)">Deactivate</button>`:`<button class="edit-btn" style="margin-left:auto;color:var(--accent)" onclick="toggleOfficeActive('${o.id}',true)">Activate</button>`}
+      </div>`:''}
+    </div>`).join('');
+}
+
+function openAddOffice(){
+  document.getElementById('officeModalTitle').textContent='Add Office';
+  document.getElementById('officeModalId').value='';
+  ['officeName','officeAddress','officeCity'].forEach(id=>document.getElementById(id).value='');
+  document.getElementById('officeRadius').value='200';
+  document.getElementById('officeLat').value='';document.getElementById('officeLng').value='';
+  document.getElementById('officeModalErr').textContent='';
+  document.getElementById('officeModal').classList.add('open');
+}
+
+function openEditOffice(o){
+  document.getElementById('officeModalTitle').textContent='Edit Office';
+  document.getElementById('officeModalId').value=o.id;
+  document.getElementById('officeName').value=o.name;
+  document.getElementById('officeAddress').value=o.address;
+  document.getElementById('officeCity').value=o.city;
+  document.getElementById('officeRadius').value=o.radius_meters;
+  document.getElementById('officeLat').value=o.lat;
+  document.getElementById('officeLng').value=o.lng;
+  document.getElementById('officeModalErr').textContent='';
+  document.getElementById('officeModal').classList.add('open');
+}
+
+function closeOfficeModal(){document.getElementById('officeModal').classList.remove('open');}
+
+async function saveOffice(){
+  const id=document.getElementById('officeModalId').value;
+  const name=document.getElementById('officeName').value.trim();
+  const address=document.getElementById('officeAddress').value.trim();
+  const city=document.getElementById('officeCity').value.trim();
+  const radius=parseFloat(document.getElementById('officeRadius').value);
+  const lat=parseFloat(document.getElementById('officeLat').value);
+  const lng=parseFloat(document.getElementById('officeLng').value);
+  const errEl=document.getElementById('officeModalErr');errEl.textContent='';
+  if(!name||!address||!city){errEl.textContent='Name, address and city are required.';return;}
+  if(isNaN(lat)||isNaN(lng)){errEl.textContent='Please enter valid latitude and longitude.';return;}
+  if(lat<-90||lat>90){errEl.textContent='Latitude must be between -90 and 90.';return;}
+  if(lng<-180||lng>180){errEl.textContent='Longitude must be between -180 and 180.';return;}
+  const body=JSON.stringify({name,address,city,lat,lng,radius_meters:radius||200});
+  const res=id?await api('/api/offices/'+id,{method:'PATCH',body}):await api('/api/offices/',{method:'POST',body});
+  if(!res)return;const data=await res.json();
+  if(res.ok){
+    showToast(id?name+' updated ✓':name+' created ✓');
+    closeOfficeModal();officesList=[];  // clear cache so it reloads fresh
+    await loadOffices();
+    // Refresh employee dropdowns too
+    await _populateOfficeDropdowns();
+  }else errEl.textContent=data.detail||'Failed to save office';
+}
+
+async function deleteOffice(id,name){
+  if(!confirm('Delete office "'+name+'"?\n\nThis will fail if any staff are still assigned.'))return;
+  const res=await api('/api/offices/'+id,{method:'DELETE'});
+  if(!res)return;const data=await res.json();
+  if(res.ok){showToast(name+' deleted ✓');officesList=[];await loadOffices();}
+  else showToast(data.detail||'Failed to delete office');
+}
+
+async function toggleOfficeActive(id,active){
+  const res=await api('/api/offices/'+id,{method:'PATCH',body:JSON.stringify({is_active:active})});
+  if(res&&res.ok){showToast('Office '+(active?'activated':'deactivated')+' ✓');officesList=[];await loadOffices();}
+}
+
+// Assign employee to a different office from the employees table dropdown
+async function assignOffice(userId,officeId,selectEl){
+  const res=await api('/api/auth/users/'+userId,{method:'PATCH',body:JSON.stringify({office_id:officeId||null})});
+  if(res&&res.ok) showToast('Office assigned ✓');
+  else{const d=await res?.json();showToast(d?.detail||'Failed');if(selectEl)selectEl.value='';}
+}
+
+// Populate office dropdowns (Add Employee modal)
+async function _populateOfficeDropdowns(){
+  await _ensureOffices();
+  const sel=document.getElementById('empOfficeId');if(!sel)return;
+  const cur=sel.value;
+  sel.innerHTML='<option value="">— No Office Yet —</option>'+officesList.map(o=>`<option value="${o.id}">${o.name} (${o.city})</option>`).join('');
+  if(cur)sel.value=cur;
 }
 
 // ═══ LEAVE ════════════════════════════════════════════════════
@@ -988,16 +1098,14 @@ async function loadAdminLeaveBalance(){
 async function loadMyLeaves(){
   const res=await api('/api/leave/me');if(!res||!res.ok)return;
   const leaves=await res.json();const ct=document.getElementById('myLeaveList');const cnt=document.getElementById('myLeaveCountLabel');
-  if(cnt)cnt.textContent=leaves.length+' request'+(leaves.length!==1?'s':'');
-  if(!ct)return;
+  if(cnt)cnt.textContent=leaves.length+' request'+(leaves.length!==1?'s':'');if(!ct)return;
   if(!leaves.length){ct.innerHTML='<p style="color:var(--gray-400);font-size:0.875rem">No leave requests yet.</p>';return;}
   const sC={pending:'pill-contact',approved:'pill-converted',rejected:'pill-inactive',cancelled:'pill-inactive'};
   ct.innerHTML='<div class="table-scroll"><table class="data-table"><thead><tr><th>Type</th><th>Dates</th><th>Days</th><th>Reason</th><th>Status</th><th>Applied</th></tr></thead><tbody>'+leaves.map(l=>`<tr><td>${cap(l.leave_type)} Leave</td><td>${l.start_date} → ${l.end_date}</td><td>${l.total_days}</td><td style="max-width:160px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis">${l.reason}</td><td><span class="pill ${sC[l.status]||''}">${cap(l.status)}</span></td><td style="color:var(--gray-400)">${fmtDate(l.applied_at)}</td></tr>`).join('')+'</tbody></table></div>';
 }
 async function loadPendingLeaves(){
   const res=await api('/api/leave/?status=pending');if(!res||!res.ok)return;
-  const leaves=await res.json();const ct=document.getElementById('pendingLeaveList');if(!ct)return;
-  leaveIdMap={};
+  const leaves=await res.json();const ct=document.getElementById('pendingLeaveList');if(!ct)return;leaveIdMap={};
   if(!leaves.length){ct.innerHTML='<p style="color:var(--gray-400);font-size:0.875rem">No pending requests ✓</p>';return;}
   ct.innerHTML=leaves.map((l,i)=>{leaveIdMap[i]=l.id;return`<div class="leave-item" id="li-${i}"><div><h4>${l.employee_name} — ${cap(l.leave_type)} Leave</h4><p>${l.start_date} → ${l.end_date} · ${l.total_days} day(s) · ${l.reason}</p></div><div class="leave-actions"><button class="btn-approve" onclick="handleLeave(${i},'approve')">✓ Approve</button><button class="btn-reject" onclick="handleLeave(${i},'reject')">✗ Reject</button></div></div>`;}).join('');
 }
@@ -1022,12 +1130,13 @@ async function submitLeave(){
   if(!res){btn.disabled=false;btn.textContent='Apply for Leave';return;}
   const data=await res.json();
   if(res.ok){show('Leave submitted! Pending approval ('+data.total_days+' day(s)).',false);document.getElementById('leaveStart').value='';document.getElementById('leaveEnd').value='';document.getElementById('leaveReason').value='';loadMyLeaves();loadStaffLeaveBalance();}
-  else{show(data.detail||'Failed to submit.',true);}
+  else show(data.detail||'Failed to submit.',true);
   btn.disabled=false;btn.textContent='Apply for Leave';
 }
 
-// ═══ EMPLOYEES ════════════════════════════════════════════════
+// ═══ EMPLOYEES — now shows office + assign dropdown ═══════════
 async function loadEmployees(){
+  await _ensureOffices();
   const res=await api('/api/auth/users');if(!res||!res.ok)return;
   const users=await res.json();const tb=document.getElementById('empTableBody');const h3=document.getElementById('empDirTitle');
   const me=getUser();const isAdmin=me&&me.role==='admin';
@@ -1037,30 +1146,46 @@ async function loadEmployees(){
   const rc={admin:{bg:'#fee2e2',tc:'#991b1b'},manager:{bg:'#fef3c7',tc:'#92400e'},agent:{bg:'#eef4f1',tc:'#315b7a'},viewer:{bg:'#dbeafe',tc:'#1d4ed8'}};
   tb.innerHTML=users.map(u=>{
     const c=rc[u.role]||{bg:'#f0f0ec',tc:'#4a4a46'};const lbl=u.role==='agent'?'Staff':cap(u.role);const isSelf=me&&me.user_id===u.id;
+    // Office assign dropdown (admin only)
+    const officeCell=isAdmin
+      ?`<select class="office-assign-sel" onchange="assignOffice('${u.id}',this.value,this)" title="Assign office">
+          <option value="">— No Office —</option>
+          ${officesList.map(o=>`<option value="${o.id}" ${u.office_id===o.id?'selected':''}>${o.name}</option>`).join('')}
+        </select>`
+      :`<span style="font-size:0.82rem">${u.office_name||'—'}</span>`;
     const deleteBtn=(isAdmin&&!isSelf)?`<button class="remove-btn" onclick="deleteEmployee('${u.id}','${u.name}')">Remove</button>`:`<span style="font-size:0.72rem;color:var(--gray-400)">${isSelf?'You':'—'}</span>`;
-    return`<tr><td><b>${u.name}</b></td><td style="color:var(--gray-500)">${u.email}</td><td><span class="pill" style="background:${c.bg};color:${c.tc}">${lbl}</span></td><td>${u.department||'—'}</td><td><span class="pill ${u.is_active?'pill-active':'pill-inactive'}">${u.is_active?'Active':'Inactive'}</span></td><td style="color:var(--gray-400)">${fmtDate(u.created_at)}</td><td>${deleteBtn}</td></tr>`;
-  }).join('')||'<tr><td colspan="7" style="color:var(--gray-400)">No employees found</td></tr>';
+    return`<tr><td><b>${u.name}</b></td><td style="color:var(--gray-500)">${u.email}</td><td><span class="pill" style="background:${c.bg};color:${c.tc}">${lbl}</span></td><td>${u.department||'—'}</td><td>${officeCell}</td><td><span class="pill ${u.is_active?'pill-active':'pill-inactive'}">${u.is_active?'Active':'Inactive'}</span></td><td style="color:var(--gray-400)">${fmtDate(u.created_at)}</td><td>${deleteBtn}</td></tr>`;
+  }).join('')||'<tr><td colspan="8" style="color:var(--gray-400)">No employees found</td></tr>';
+  // Populate office dropdown in Add Employee modal
+  await _populateOfficeDropdowns();
 }
 async function deleteEmployee(userId,userName){
   if(!confirm('Remove '+userName+' permanently?\n\nThis cannot be undone.'))return;
   const res=await api('/api/auth/users/'+userId,{method:'DELETE'});
   if(!res)return;
-  if(res.ok){showToast(userName+' removed ✓');loadEmployees();}
-  else{const d=await res.json();showToast('Error: '+(d.detail||'Failed'));}
+  if(res.ok){showToast(userName+' removed ✓');loadEmployees();}else{const d=await res.json();showToast('Error: '+(d.detail||'Failed'));}
 }
-function openAddEmp(){document.getElementById('addEmpModal').classList.add('open');}
-function closeAddEmp(){document.getElementById('addEmpModal').classList.remove('open');document.getElementById('empModalErr').textContent='';['empName','empEmail','empPassword','empPhone','empDept'].forEach(id=>{const el=document.getElementById(id);if(el)el.value='';});}
+function openAddEmp(){
+  _populateOfficeDropdowns();
+  document.getElementById('addEmpModal').classList.add('open');
+}
+function closeAddEmp(){
+  document.getElementById('addEmpModal').classList.remove('open');document.getElementById('empModalErr').textContent='';
+  ['empName','empEmail','empPassword','empPhone','empDept'].forEach(id=>{const el=document.getElementById(id);if(el)el.value='';});
+  const eo=document.getElementById('empOfficeId');if(eo)eo.value='';
+}
 async function saveEmployee(){
   const name=document.getElementById('empName').value.trim();const email=document.getElementById('empEmail').value.trim();
   const pwd=document.getElementById('empPassword').value;const phone=document.getElementById('empPhone').value.trim();
   const dept=document.getElementById('empDept').value.trim();const role=document.getElementById('empRole').value;
+  const officeId=document.getElementById('empOfficeId').value||null;
   const errEl=document.getElementById('empModalErr');
   if(!name||!email||!pwd){errEl.textContent='Name, email and password are required.';return;}
   if(pwd.length<8){errEl.textContent='Password must be at least 8 characters.';return;}
-  const res=await api('/api/auth/register',{method:'POST',body:JSON.stringify({name,email,password:pwd,phone,department:dept,role})});
+  const res=await api('/api/auth/register',{method:'POST',body:JSON.stringify({name,email,password:pwd,phone,department:dept,role,office_id:officeId})});
   if(!res)return;const data=await res.json();
   if(res.ok){showToast(name+' added ✓');closeAddEmp();loadEmployees();}
-  else{errEl.textContent=data.detail||'Failed to create employee';}
+  else errEl.textContent=data.detail||'Failed to create employee';
 }
 
 // ═══ REPORTS ══════════════════════════════════════════════════
@@ -1081,24 +1206,22 @@ async function loadTeamReports(){
   const rows=await Promise.all(users.map(async u=>{
     const r=await api('/api/attendance/employee/'+u.id+'?month='+month+'&year='+year);if(!r||!r.ok)return null;
     const d=await r.json();const recs=d.records||[];
-    const present=recs.filter(r=>r.punch_in&&r.status!=='on-leave').length;
-    const late=recs.filter(r=>r.is_late).length;
+    const present=recs.filter(r=>r.punch_in&&r.status!=='on-leave').length;const late=recs.filter(r=>r.is_late).length;
     totalLate+=late;totalPresentSum+=present;
     const absent=Math.max(0,workingDays-present);const pct=workingDays>0?Math.round((present/workingDays)*100):0;
-    return`<tr><td><b>${u.name}</b></td><td>${present}</td><td>${absent}</td><td>${late}</td><td><span style="background:#ede9fe;color:#6d28d9;padding:2px 8px;border-radius:100px;font-size:0.68rem">${holidays.length}</span></td><td>${pct}%</td></tr>`;
+    return`<tr><td><b>${u.name}</b></td><td style="color:var(--gray-500);font-size:0.82rem">${u.office_name||'—'}</td><td>${present}</td><td>${absent}</td><td>${late}</td><td><span style="background:#ede9fe;color:#6d28d9;padding:2px 8px;border-radius:100px;font-size:0.68rem">${holidays.length}</span></td><td>${pct}%</td></tr>`;
   }));
   if(repLate)repLate.textContent=totalLate;
   const avgPct=users.length&&workingDays>0?Math.round((totalPresentSum/(users.length*workingDays))*100):0;
   const raa=document.getElementById('repAvgAtt');if(raa)raa.textContent=avgPct+'%';
   const rah=document.getElementById('repAvgHint');if(rah){rah.textContent=avgPct>=80?'↑ On track':'↓ Below target';rah.style.color=avgPct>=80?'var(--accent)':'var(--red)';}
-  tb.innerHTML=rows.filter(Boolean).join('')||'<tr><td colspan="6" style="color:var(--gray-400)">No attendance data yet</td></tr>';
+  tb.innerHTML=rows.filter(Boolean).join('')||'<tr><td colspan="7" style="color:var(--gray-400)">No attendance data yet</td></tr>';
 }
 async function loadMyReport(){
   const now=new Date();const month=now.getMonth()+1;const year=now.getFullYear();
   const [res,holidays]=await Promise.all([api('/api/attendance/me?month='+month+'&year='+year),fetchHolidays(month,year)]);
   if(!res||!res.ok)return;const d=await res.json();const recs=d.records||[];
-  const present=d.present_days||0;const late=d.late_days||0;
-  const workingDays=getWorkingDays(year,month,holidays);
+  const present=d.present_days||0;const late=d.late_days||0;const workingDays=getWorkingDays(year,month,holidays);
   const absent=Math.max(0,workingDays-present);const pct=workingDays>0?Math.round((present/workingDays)*100):0;
   const rp=document.getElementById('repMyPresent');if(rp)rp.textContent=present;
   const ra=document.getElementById('repMyAbsent');if(ra)ra.textContent=absent;
@@ -1110,12 +1233,13 @@ async function loadMyReport(){
 </script>
 
 <nav class="bottom-nav">
-  <div class="bnav-item active" data-tab="overview"    onclick="switchTab('overview',this)">   <span class="bnav-icon">📊</span><span class="bnav-label">Home</span></div>
-  <div class="bnav-item"        data-tab="leads"        onclick="switchTab('leads',this)">        <span class="bnav-icon">👥</span><span class="bnav-label">Leads</span></div>
-  <div class="bnav-item"        data-tab="attendance"   onclick="switchTab('attendance',this)">   <span class="bnav-icon">📍</span><span class="bnav-label">Attend</span></div>
-  <div class="bnav-item"        data-tab="leave"        onclick="switchTab('leave',this)">        <span class="bnav-icon">🗓</span><span class="bnav-label">Leave</span></div>
+  <div class="bnav-item active" data-tab="overview"    onclick="switchTab('overview',this)">    <span class="bnav-icon">📊</span><span class="bnav-label">Home</span></div>
+  <div class="bnav-item"        data-tab="leads"        onclick="switchTab('leads',this)">         <span class="bnav-icon">👥</span><span class="bnav-label">Leads</span></div>
+  <div class="bnav-item"        data-tab="attendance"   onclick="switchTab('attendance',this)">    <span class="bnav-icon">📍</span><span class="bnav-label">Attend</span></div>
+  <div class="bnav-item"        data-tab="leave"        onclick="switchTab('leave',this)">         <span class="bnav-icon">🗓</span><span class="bnav-label">Leave</span></div>
   <div class="bnav-item" id="bnavEmployees" data-tab="employees" onclick="switchTab('employees',this)"><span class="bnav-icon">👤</span><span class="bnav-label">Team</span></div>
-  <div class="bnav-item"        data-tab="reports"      onclick="switchTab('reports',this)">      <span class="bnav-icon">📄</span><span class="bnav-label">Reports</span></div>
+  <div class="bnav-item" id="bnavOffices"   data-tab="offices"   onclick="switchTab('offices',this)">  <span class="bnav-icon">🏢</span><span class="bnav-label">Offices</span></div>
+  <div class="bnav-item"        data-tab="reports"      onclick="switchTab('reports',this)">       <span class="bnav-icon">📄</span><span class="bnav-label">Reports</span></div>
 </nav>
 </body>
 </html>
