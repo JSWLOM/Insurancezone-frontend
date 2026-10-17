@@ -4,9 +4,11 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Dashboard — Insurance Zone</title>
-<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🛡</text></svg>">
+<link rel="icon" type="image/x-icon" href="images/favicon.ico">
+<link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32.png">
+<link rel="apple-touch-icon" sizes="180x180" href="images/apple-touch-icon.png">
 <link rel="preconnect" href="https://fonts.googleapis.com">
-<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400;1,600&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400;1,600&family=Montserrat:wght@300;400;500;600&display=swap" rel="stylesheet">
 <style>
   :root{
     --bg:#f7f7f5;--surface:#fff;--line:#e2e2de;
@@ -15,7 +17,7 @@
     --gray-400:#8a8a85;--gray-500:#6a6a65;--gray-600:#4a4a46;--gray-700:#2e2e2b;
     --accent:#315b7a;--accent-hover:#254d3e;--accent-light:#c8dcd4;--accent-pale:#eef4f1;
     --red:#dc2626;--amber:#d97706;--green:#059669;
-    --font-main:'DM Sans',sans-serif;--font-serif:'Cormorant Garamond',serif;
+    --font-main:'Montserrat',sans-serif;--font-serif:'Cormorant Garamond',serif;
   }
   *,*::before,*::after{box-sizing:border-box;margin:0;padding:0;}
   html,body{height:100%;}
@@ -223,13 +225,59 @@
     .metric-value{font-size:1.45rem;}.metric-label{font-size:0.65rem;}.data-table{font-size:0.75rem;}
     .main{padding:0.75rem;padding-top:calc(52px + 0.75rem);padding-bottom:calc(58px + 0.875rem + env(safe-area-inset-bottom,0px));}
   }
+
+  /* ── LOGO ── */
+  .sidebar-logo{flex-direction:column;align-items:flex-start;gap:8px;}
+  .sidebar-logo-img{width:150px;height:auto;display:block;transition:transform .3s ease;}
+  .sidebar-logo-img:hover{transform:scale(1.04);}
+  .mtb-logo-img{width:30px;height:30px;border-radius:7px;flex-shrink:0;}
+
+  /* ── ANIMATIONS ── */
+  @keyframes fadeUp{from{opacity:0;transform:translateY(14px);}to{opacity:1;transform:none;}}
+  @keyframes fadeIn{from{opacity:0;}to{opacity:1;}}
+  @keyframes popIn{from{opacity:0;transform:scale(.96) translateY(10px);}to{opacity:1;transform:none;}}
+  @keyframes slideRight{from{opacity:0;transform:translateX(-16px);}to{opacity:1;transform:none;}}
+
+  .tab-pane.active{animation:fadeUp .45s cubic-bezier(.16,1,.3,1) backwards;}
+  .metric-card,.dash-card,.office-card,.leave-item{animation:fadeUp .5s cubic-bezier(.16,1,.3,1) backwards;}
+  .metrics-grid .metric-card:nth-child(1),.office-grid .office-card:nth-child(1){animation-delay:.05s;}
+  .metrics-grid .metric-card:nth-child(2),.office-grid .office-card:nth-child(2){animation-delay:.12s;}
+  .metrics-grid .metric-card:nth-child(3),.office-grid .office-card:nth-child(3){animation-delay:.19s;}
+  .metrics-grid .metric-card:nth-child(4),.office-grid .office-card:nth-child(4){animation-delay:.26s;}
+  .office-grid .office-card:nth-child(n+5){animation-delay:.3s;}
+
+  .sidebar{animation:slideRight .5s ease backwards;}
+  .sidebar-nav .nav-item{animation:slideRight .4s ease backwards;}
+  .sidebar-nav .nav-item:nth-child(1){animation-delay:.1s;}
+  .sidebar-nav .nav-item:nth-child(2){animation-delay:.15s;}
+  .sidebar-nav .nav-item:nth-child(3){animation-delay:.2s;}
+  .sidebar-nav .nav-item:nth-child(4){animation-delay:.25s;}
+  .sidebar-nav .nav-item:nth-child(5){animation-delay:.3s;}
+  .sidebar-nav .nav-item:nth-child(6){animation-delay:.35s;}
+  .sidebar-nav .nav-item:nth-child(7){animation-delay:.4s;}
+  .nav-item:hover{transform:translateX(3px);}
+
+  .office-card{transition:box-shadow .25s,transform .25s;}
+  .office-card:hover{transform:translateY(-4px);}
+  .metric-card{transition:transform .25s,box-shadow .25s;}
+  .metric-card:hover{transform:translateY(-3px);box-shadow:0 8px 24px rgba(0,0,0,.06);}
+  .data-table tbody tr{transition:background .2s;}
+  .data-table tbody tr:hover{background:var(--gray-50);}
+  .action-btn,.action-btn-sm,.edit-btn,.remove-btn,.btn-approve,.btn-reject{transition:transform .15s,background .2s,box-shadow .2s;}
+  .action-btn:hover,.action-btn-sm:hover,.edit-btn:hover{transform:translateY(-1px);}
+  .action-btn:active,.action-btn-sm:active,.edit-btn:active,.remove-btn:active{transform:scale(.97);}
+
+  .modal-overlay.open{animation:fadeIn .25s ease;}
+  .modal-overlay.open .modal-card{animation:popIn .3s cubic-bezier(.16,1,.3,1);}
+
+  @media(prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important;}}
 </style>
 </head>
 <body>
 
 <div class="mobile-topbar">
   <div class="mtb-left">
-    <div class="mtb-logo">IZ</div>
+    <img src="images/favicon-32.png" alt="IZ" class="mtb-logo-img">
     <div>
       <div style="font-size:0.82rem;font-weight:400" id="mtbGreet">Insurance Zone</div>
       <div style="font-size:0.65rem;color:rgba(255,255,255,0.4);letter-spacing:0.06em;text-transform:uppercase" id="mtbRole">Staff</div>
@@ -244,8 +292,8 @@
 <div class="dash-wrap">
   <aside class="sidebar">
     <div class="sidebar-logo">
-      <div class="sidebar-logo-mark">IZ</div>
-      <div><div class="sidebar-logo-text">Insurance Zone</div><div class="sidebar-role" id="sidebarRole">Portal</div></div>
+      <img src="images/insurance-zone-logo.png" alt="Insurance Zone" class="sidebar-logo-img">
+      <div class="sidebar-role" id="sidebarRole">Portal</div>
     </div>
     <ul class="sidebar-nav">
       <li class="nav-item active" data-tab="overview"    onclick="switchTab('overview',this)"><span class="nav-icon">📊</span> Overview</li>
